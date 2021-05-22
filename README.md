@@ -1,13 +1,14 @@
 # JavaFX-Jena CRUD
 
-CRUD app made with JavaFX and Apache Jena TDB database. Forked from [JavaFX-MySQL CRUD](https://github.com/miduraa11/javafx-mysql-crud) created by @miduraa11.
-[SPARQL CRUD (USING APACHE JENA FUSEKI)](https://gist.github.com/maqboolkhan/bdd8f913dc3c7a3da723dbdcfad7ec0d) by @maqboolkhan is used as reference to execute query using Apache Jena Fuseki.
+CRUD app made with JavaFX and Apache Jena TDB database. Forked from [JavaFX-MySQL CRUD](https://github.com/miduraa11/javafx-mysql-crud) created by [@miduraa11](https://github.com/miduraa11).  
+[SPARQL CRUD (USING APACHE JENA FUSEKI)](https://gist.github.com/maqboolkhan/bdd8f913dc3c7a3da723dbdcfad7ec0d) by [@maqboolkhan](https://github.com/maqboolkhan) is used as reference to execute query using Apache Jena Fuseki.
 
 ## Dependencies
 
 - Java Development Kit ver. 11.0.10
 - OpenJFX ver. 11.0.2
 - Apache Jena ver. 4.0.0
+- Apache Jena Fuseki ver. 4.0.0
 
 ## Samples
 
