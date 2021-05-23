@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MahasiswaController">
+   <children>
+      <VBox layoutX="26.0" layoutY="22.0" spacing="15.0">
+         <children>
+            <Label text="NPM">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Nama">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Angkatan">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="No. HP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="87.0" layoutY="22.0" prefHeight="130.0" prefWidth="129.0" spacing="10.0">
+         <children>
+            <TextField fx:id="npmField" />
+            <TextField fx:id="namaField" />
+            <TextField fx:id="angkatanField" />
+            <TextField fx:id="emailField" />
+            <TextField fx:id="telpField" />           
+         </children>
+      </VBox>
+      <HBox layoutX="26.0" layoutY="202.0" spacing="10.0">
+         <children>
+            <Button fx:id="insertButton" mnemonicParsing="false" onAction="#insertButton" prefHeight="30.0" prefWidth="60.0" text="Insert" />
+            <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateButton" prefHeight="30.0" prefWidth="60.0" text="Update" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButton" prefHeight="30.0" prefWidth="60.0" text="Delete" />
+         </children>
+      </HBox>
+      <TableView fx:id="TableView" layoutX="238.0" layoutY="22.0" prefHeight="210.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="npmColumn" prefWidth="135.0" text="NPM" />
+          <TableColumn fx:id="namaColumn" prefWidth="175.0" text="Nama" />
+          <TableColumn fx:id="angkatanColumn" prefWidth="68.0" text="Angkatan" />
+          <TableColumn fx:id="emailColumn" prefWidth="110.0" text="Email" />
+          <TableColumn fx:id="telpColumn" prefWidth="110.0" text="No. HP" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
