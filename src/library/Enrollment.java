@@ -4,16 +4,16 @@ public class Enrollment {
 	private String id;
     private String npm;
     private String kdmatkul;
-    private String tahun;
+    private int tahun;
 
-    public MataKuliah (String id, String npm, String kdmatkul, String tahun) {
+    public Enrollment(String id, String npm, String kdmatkul, int tahun) {
         this.id = id;
     	this.npm = npm;
     	this.kdmatkul = kdmatkul;
     	this.tahun = tahun;
     }
 
-    public String getID() {
+    public String getId() {
     	return id;
     }
 

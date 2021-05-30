@@ -85,6 +85,7 @@ public class MahasiswaController implements Initializable {
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showMahasiswa();
     }
 
@@ -103,6 +104,7 @@ public class MahasiswaController implements Initializable {
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showMahasiswa();
     }
 
@@ -116,6 +118,7 @@ public class MahasiswaController implements Initializable {
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showMahasiswa();
     }
 
@@ -173,6 +176,8 @@ public class MahasiswaController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        connection.close();
         return mahasiswaList;
     }
 

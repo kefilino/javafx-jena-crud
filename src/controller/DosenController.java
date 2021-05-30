@@ -30,7 +30,7 @@ public class DosenController implements Initializable {
     private final String prefix = "PREFIX dosen: <http://kefilino.me/ns/dosen#>";
 
     @FXML
-    private TextField nimField;
+    private TextField nipField;
 
     @FXML
     private TextField namaField;
@@ -48,7 +48,7 @@ public class DosenController implements Initializable {
     private TableView<Dosen> TableView;
 
     @FXML
-    private TableColumn<Dosen, String> nimColumn;
+    private TableColumn<Dosen, String> nipColumn;
 
     @FXML
     private TableColumn<Dosen, String> namaColumn;
@@ -58,13 +58,13 @@ public class DosenController implements Initializable {
         RDFConnectionFuseki connection = getConnection();
         String query = prefix.concat(
                 " INSERT DATA { "
-                + "dosen:" + nimField.getText() + "  dosen:nama \"" + namaField.getText() + "\" . }");
+                + "dosen:" + nipField.getText() + "  dosen:nama \"" + namaField.getText() + "\" . }");
         UpdateRequest request = UpdateFactory.create();
-        System.out.println(query);
 
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showDosen();
     }
 
@@ -72,15 +72,15 @@ public class DosenController implements Initializable {
     private void updateButton() {
         RDFConnectionFuseki connection = getConnection();
         String query = prefix.concat(
-                " DELETE WHERE { dosen:" + nimField.getText() + " ?p ?o . } ; "
+                " DELETE WHERE { dosen:" + nipField.getText() + " ?p ?o . } ; "
                 + "INSERT DATA { "
-                + "dosen:" + nimField.getText() + "  dosen:nama \"" + namaField.getText() + "\" . } ");
-        System.out.println(query);
+                + "dosen:" + nipField.getText() + "  dosen:nama \"" + namaField.getText() + "\" . } ");
         UpdateRequest request = UpdateFactory.create();
 
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showDosen();
     }
 
@@ -88,12 +88,13 @@ public class DosenController implements Initializable {
     private void deleteButton() {
         RDFConnectionFuseki connection = getConnection();
         String query = prefix.concat(
-                " DELETE WHERE { dosen:" + nimField.getText() + " ?p ?o . } ");
+                " DELETE WHERE { dosen:" + nipField.getText() + " ?p ?o . } ");
         UpdateRequest request = UpdateFactory.create();
 
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showDosen();
     }
 
@@ -105,11 +106,11 @@ public class DosenController implements Initializable {
             @Override
             public void onChanged(Change<? extends Dosen> change) {
                 try {
-                    nimField.setText(change.getList().get(0).getNim());
+                    nipField.setText(change.getList().get(0).getNip());
                     namaField.setText(change.getList().get(0).getNama());
                 } catch (IndexOutOfBoundsException e) {
                     System.out.println("Selected item not found.");
-                    nimField.setText("");
+                    nipField.setText("");
                     namaField.setText("");
                 }
             }
@@ -129,7 +130,7 @@ public class DosenController implements Initializable {
         ObservableList<Dosen> dosenList = FXCollections.observableArrayList();
         RDFConnectionFuseki connection = getConnection();
         String query = prefix.concat(
-                " SELECT (strafter(str(?s),'#') as ?nim) ?nama "
+                " SELECT (strafter(str(?s),'#') as ?nip) ?nama "
                 + "WHERE { ?s dosen:nama ?nama . } ");
         QueryExecution qExec;
         ResultSet rs;
@@ -141,19 +142,21 @@ public class DosenController implements Initializable {
 
             while (rs.hasNext()) {
                 QuerySolution soln = rs.nextSolution();
-                dosen = new Dosen(soln.get("?nim").toString(), soln.get("?nama").toString());
+                dosen = new Dosen(soln.get("?nip").toString(), soln.get("?nama").toString());
                 dosenList.add(dosen);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        connection.close();
         return dosenList;
     }
 
     public void showDosen() {
         ObservableList<Dosen> list = getDosenList();
 
-        nimColumn.setCellValueFactory(new PropertyValueFactory<Dosen, String>("nim"));
+        nipColumn.setCellValueFactory(new PropertyValueFactory<Dosen, String>("nip"));
         namaColumn.setCellValueFactory(new PropertyValueFactory<Dosen, String>("nama"));
 
         TableView.setItems(list);

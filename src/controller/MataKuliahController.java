@@ -79,6 +79,7 @@ public class MataKuliahController implements Initializable {
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showMataKuliah();
     }
 
@@ -97,6 +98,7 @@ public class MataKuliahController implements Initializable {
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showMataKuliah();
     }
 
@@ -110,6 +112,7 @@ public class MataKuliahController implements Initializable {
         request.add(query);
         connection.update(request);
 
+        connection.close();
         showMataKuliah();
     }
 
@@ -165,6 +168,8 @@ public class MataKuliahController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        connection.close();   
         return mahasiswaList;
     }
 

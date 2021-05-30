@@ -21,5 +21,10 @@
           <fx:include fx:id="MataKuliahPane" source="MataKuliahPane.fxml" />
         </content>
       </Tab>
+      <Tab closable="false" text="Enrollment">
+        <content>
+          <fx:include fx:id="EnrollmentPane" source="EnrollmentPane.fxml" />
+        </content>
+      </Tab>
    </tabs>
 </TabPane>

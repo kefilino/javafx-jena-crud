@@ -1,6 +1,7 @@
 package controller;
 
 import library.Enrollment;
+import library.MataKuliah;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
@@ -27,7 +28,9 @@ public class EnrollmentController implements Initializable {
     private RDFConnectionRemoteBuilder builder = RDFConnectionFuseki.create()
             .destination("http://localhost:3030/enrollment");
 
-    private final String prefix = "PREFIX enrollment: <http://kefilino.me/ns/enrollment#>";
+    private final String prefix = "PREFIX enrollment: <http://kefilino.me/ns/enrollment#>\n"
+        + "PREFIX mahasiswa: <http://kefilino.me/ns/mahasiswa#>\n"
+        + "PREFIX matakuliah: <http://kefilino.me/ns/mahasiswa#>";
 
     @FXML
     private TextField idField;
@@ -86,7 +89,7 @@ public class EnrollmentController implements Initializable {
     private void updateButton() {
         RDFConnectionFuseki connection = getConnection();
         String query = prefix.concat(
-                " DELETE WHERE { matakuliah:" + kdmatkulField.getText() + " ?p ?o . } ; "
+                " DELETE WHERE { enrollment:" + idField.getText() + " ?p ?o . } ; "
                 + "INSERT DATA { "
                 + "enrollment:" + idField.getText() + "  mahasiswa:npm \"" + npmField.getText() + "\" ; "
                 + "matakuliah:kdmatkul \"" + kdmatkulField.getText() + "\" ; "
@@ -121,7 +124,7 @@ public class EnrollmentController implements Initializable {
             @Override
             public void onChanged(Change<? extends Enrollment> change) {
                 try {
-                    idField.setText(change.getList().get(0).getID());
+                    idField.setText(change.getList().get(0).getId());
                     npmField.setText(change.getList().get(0).getNpm());
                     kdmatkulField.setText(change.getList().get(0).getKdmatkul());
                     tahunField.setText(String.valueOf(change.getList().get(0).getTahun()));
@@ -140,32 +143,32 @@ public class EnrollmentController implements Initializable {
             return null;
         }
     }
-    //ini gw bingung fil ngubahnya gimana
+    
     public ObservableList<Enrollment> getEnrollmentList() {
-        ObservableList<Enrollment> mahasiswaList = FXCollections.observableArrayList();
+        ObservableList<Enrollment> enrollmentList = FXCollections.observableArrayList();
         RDFConnectionFuseki connection = getConnection();
         String query = prefix.concat(
-                " SELECT (strafter(str(?s),'#') as ?kdmatkul) ?nama ?pengajar (str(?sks) as ?sksStr) "
-                + "WHERE { ?s matakuliah:nama ?nama ;" + "matakuliah:pengajar ?pengajar ;"
-                + "matakuliah:sks ?sks . }");
+                " SELECT (strafter(str(?s),'#') as ?id) ?npm ?kdmatkul (str(?tahun) as ?tahunStr) "
+                + "WHERE { ?s mahasiswa:npm ?npm ;" + "matakuliah:kdmatkul ?kdmatkul ;"
+                + "enrollment:tahun ?tahun . }");
         QueryExecution qExec;
         ResultSet rs;
 
         try {
             qExec = connection.query(query);
             rs = qExec.execSelect();
-            MataKuliah mahasiswa;
+            Enrollment enrollment;
 
             while (rs.hasNext()) {
                 QuerySolution soln = rs.nextSolution();
-                mahasiswa = new MataKuliah(soln.get("?kdmatkul").toString(), soln.get("?nama").toString(),
-                        soln.get("?pengajar").toString(), Integer.parseInt(soln.get("?sksStr").toString()));
-                mahasiswaList.add(mahasiswa);
+                enrollment = new Enrollment(soln.get("?id").toString(), soln.get("?npm").toString(),
+                        soln.get("?kdmatkul").toString(), Integer.parseInt(soln.get("?tahunStr").toString()));
+                enrollmentList.add(enrollment);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return mahasiswaList;
+        return enrollmentList;
     }
 
     public void showEnrollment() {

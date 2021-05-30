@@ -1,16 +1,16 @@
 package library;
 
 public class Dosen {
-	private String nim;
+	private String nip;
     private String nama;
 
-    public Dosen (String nim, String nama) {
-        this.nim = nim;
+    public Dosen (String nip, String nama) {
+        this.nip = nip;
     	this.nama = nama;
     }
 
-    public String getNim() {
-    	return nim;
+    public String getNip() {
+    	return nip;
     }
 
     public String getNama() {

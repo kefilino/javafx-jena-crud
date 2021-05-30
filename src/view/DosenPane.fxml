@@ -14,7 +14,7 @@
    <children>
       <VBox layoutX="26.0" layoutY="22.0" spacing="15.0">
          <children>
-            <Label text="NIM">
+            <Label text="NIP">
                <font>
                   <Font size="14.0" />
                </font>
@@ -28,7 +28,7 @@
       </VBox>
       <VBox layoutX="87.0" layoutY="22.0" prefHeight="130.0" prefWidth="129.0" spacing="10.0">
          <children>
-            <TextField fx:id="nimField" />
+            <TextField fx:id="nipField" />
             <TextField fx:id="namaField" />           
          </children>
       </VBox>
@@ -41,7 +41,7 @@
       </HBox>
       <TableView fx:id="TableView" layoutX="238.0" layoutY="22.0" prefHeight="210.0" prefWidth="600.0">
         <columns>
-          <TableColumn fx:id="nimColumn" prefWidth="299.0" text="NIM" />
+          <TableColumn fx:id="nipColumn" prefWidth="299.0" text="NIP" />
           <TableColumn fx:id="namaColumn" prefWidth="299.0" text="Nama" />
         </columns>
       </TableView>
