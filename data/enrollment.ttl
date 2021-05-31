@@ -1,0 +1,47 @@
+<http://kefilino.me/ns/matakuliah#D10G.62B2>
+        <http://kefilino.me/ns/matakuliah#nama>
+                "Semantik Web" ;
+        <http://kefilino.me/ns/matakuliah#pengajar>
+                "198412112015041002" ;
+        <http://kefilino.me/ns/matakuliah#sks>
+                3 .
+
+<http://kefilino.me/ns/matakuliah#D10G.62B1>
+        <http://kefilino.me/ns/matakuliah#nama>
+                "Sistem Informasi Multimedia" ;
+        <http://kefilino.me/ns/matakuliah#pengajar>
+                "196704031993031002" ;
+        <http://kefilino.me/ns/matakuliah#sks>
+                3 .
+
+<http://kefilino.me/ns/matakuliah#D10G.6201>
+        <http://kefilino.me/ns/matakuliah#nama>
+                "Interaksi Manusia & Komputer" ;
+        <http://kefilino.me/ns/matakuliah#pengajar>
+                "198912302015042001" ;
+        <http://kefilino.me/ns/matakuliah#sks>
+                3 .
+
+<http://kefilino.me/ns/matakuliah#D10G.6202>
+        <http://kefilino.me/ns/matakuliah#nama>
+                "Teori Bahasa & Automata" ;
+        <http://kefilino.me/ns/matakuliah#pengajar>
+                "197607232008121001" ;
+        <http://kefilino.me/ns/matakuliah#sks>
+                3 .
+
+<http://kefilino.me/ns/matakuliah#D10G.6203>
+        <http://kefilino.me/ns/matakuliah#nama>
+                "Proyek Perangkat Lunak I" ;
+        <http://kefilino.me/ns/matakuliah#pengajar>
+                "197006151998031003" ;
+        <http://kefilino.me/ns/matakuliah#sks>
+                2 .
+
+<http://kefilino.me/ns/matakuliah#D10G.6204>
+        <http://kefilino.me/ns/matakuliah#nama>
+                "Data Warehouse" ;
+        <http://kefilino.me/ns/matakuliah#pengajar>
+                "198507042015042003" ;
+        <http://kefilino.me/ns/matakuliah#sks>
+                2 .

@@ -1,0 +1,59 @@
+<http://kefilino.me/ns/dosen#195412171986011001>
+        <http://kefilino.me/ns/dosen#nama>
+                "Prof. Dr. Atje Setiawan Abdullah, M.Kom." .
+
+<http://kefilino.me/ns/dosen#196207011993021001>
+        <http://kefilino.me/ns/dosen#nama>
+                "Dr. Setiawan Hadi, M.Sc.CS." .
+
+<http://kefilino.me/ns/dosen#196807171993031003>
+        <http://kefilino.me/ns/dosen#nama>
+                "Dr. Juli Rejito, M.Kom." .
+
+<http://kefilino.me/ns/dosen#196704031993031002>
+        <http://kefilino.me/ns/dosen#nama>
+                "Dr. Asep Sholahuddin, MT." .
+
+<http://kefilino.me/ns/dosen#198412112015041002>
+        <http://kefilino.me/ns/dosen#nama>
+                "Aditya Pradana, S.T., M.Eng." .
+
+<http://kefilino.me/ns/dosen#198203182006041001>
+        <http://kefilino.me/ns/dosen#nama>
+                "Erick Paulus, S.Si, M.Kom" .
+
+<http://kefilino.me/ns/dosen#197607232008121001>
+        <http://kefilino.me/ns/dosen#nama>
+                "Rudi Rosadi, S.Si., M.Kom." .
+
+<http://kefilino.me/ns/dosen#196110181986031002>
+        <http://kefilino.me/ns/dosen#nama>
+                "Akik Hidayat, Drs., M.Kom" .
+
+<http://kefilino.me/ns/dosen#196001151987011002>
+        <http://kefilino.me/ns/dosen#nama>
+                "Ino Suryana, Drs., M.Komp." .
+
+<http://kefilino.me/ns/dosen#196002121987011001>
+        <http://kefilino.me/ns/dosen#nama>
+                "R. Sudrajat, Drs., M.Si" .
+
+<http://kefilino.me/ns/dosen#197309252003121003>
+        <http://kefilino.me/ns/dosen#nama>
+                "Deni Setiana, S.Si. M.Cs." .
+
+<http://kefilino.me/ns/dosen#197006151998031003>
+        <http://kefilino.me/ns/dosen#nama>
+                "Akmal, S.Si., MT." .
+
+<http://kefilino.me/ns/dosen#198912302015042001>
+        <http://kefilino.me/ns/dosen#nama>
+                "Mira Suryani, S.Pd., M.Kom." .
+
+<http://kefilino.me/ns/dosen#198507042015042003>
+        <http://kefilino.me/ns/dosen#nama>
+                "Dr. Intan Nurma Yulita, S.T., M.T." .
+
+<http://kefilino.me/ns/dosen#196501281997032001>
+        <http://kefilino.me/ns/dosen#nama>
+                "Dr. Afrida Helen, MT" .

@@ -74,7 +74,6 @@ public class MataKuliahController implements Initializable {
                 + "matakuliah:pengajar \"" + pengajarField.getText() + "\" ; "
                 + "matakuliah:sks " + sksField.getText() + " . } ");
         UpdateRequest request = UpdateFactory.create();
-        System.out.println(query);
 
         request.add(query);
         connection.update(request);
@@ -93,7 +92,6 @@ public class MataKuliahController implements Initializable {
                 + "matakuliah:pengajar \"" + pengajarField.getText() + "\" ; "
                 + "matakuliah:sks " + sksField.getText() + " . } ");
         UpdateRequest request = UpdateFactory.create();
-        System.out.println(query);
 
         request.add(query);
         connection.update(request);

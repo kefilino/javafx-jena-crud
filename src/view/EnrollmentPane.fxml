@@ -55,7 +55,7 @@
         <columns>
           <TableColumn fx:id="idColumn" prefWidth="130.0" text="Kode Pendaftaran" />
           <TableColumn fx:id="npmColumn" prefWidth="159.0" text="Nama Mata Kuliah" />
-          <TableColumn fx:id="kdmatkulColumn" prefWidth="149.0" text="Dosen Pengajar" />
+          <TableColumn fx:id="kdmatkulColumn" prefWidth="149.0" text="Kode Mata Kuliah" />
           <TableColumn fx:id="tahunColumn" prefWidth="100.0" text="Tahun Ajaran" />
         </columns>
       </TableView>

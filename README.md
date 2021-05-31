@@ -10,42 +10,29 @@ CRUD app made with JavaFX and Apache Jena TDB database. Forked from [JavaFX-MySQ
 - Apache Jena ver. 4.0.0
 - Apache Jena Fuseki ver. 4.0.0
 
+## Use
+
+Launch using App.java. Make sure you have started Apache Jena Fuseki Server on port 3030.
+
 ## Samples
 
-### Reading data from database
+### Mahasiswa Table
 
-<!-- ![crud_1](https://user-images.githubusercontent.com/26482766/37049278-b46c244e-2170-11e8-9eb7-a753b7ba103e.png) -->
-*RESERVED*
-<!-- This two books were loaded from MySQL database. -->
+[mahasiswa-table](https://cdn.discordapp.com/attachments/733341377924169739/848752744214298654/mahasiswa-table.png)
 
-### Insert button
+### Dosen Table
 
-<!-- ![crud_2](https://user-images.githubusercontent.com/26482766/37049695-fb8d4f50-2171-11e8-8270-b2e73e91126b.png)
+[dosen-table](https://cdn.discordapp.com/attachments/733341377924169739/848752739051634698/dosen-table.png)
 
-To insert our new book in database we simply create sql query:
+### Mata Kuliah Table
 
-![insert](https://user-images.githubusercontent.com/26482766/37050016-09b57552-2173-11e8-8dce-b5e31636180b.PNG)
-                 
-We load our ID, Title, Author, year and Pages from TextFields.
+[matakuliah-table](https://cdn.discordapp.com/attachments/733341377924169739/848752746223632384/matakuliah-table.png)
 
-Then we execute our query. -->
-*RESERVED*
+### Enrollment Table
 
-### Update button
-
-<!-- ![crud_3](https://user-images.githubusercontent.com/26482766/37050191-7fa2ceea-2173-11e8-9493-e39c5f08cc24.png)
-
-All we need is ID of book that we want to update. -->
-*RESERVED*
-
-### Delete button
-
-<!-- ![crud_4](https://user-images.githubusercontent.com/26482766/37050260-b4703180-2173-11e8-8e78-3f6bd8bc9097.png)
-
-Also all we need to delete our book is ID. -->
-*RESERVED*
+[enrollment-table](https://cdn.discordapp.com/attachments/733341377924169739/848752741446320138/enrollment-table.png)
 
 ### Apache Jena TDB Database
 
-<!-- ![database](https://user-images.githubusercontent.com/26482766/37050437-2ecf0456-2174-11e8-8e6d-372429b9293f.png) -->
-*RESERVED*
+Using data provided in ./data folder
+[database](https://cdn.discordapp.com/attachments/733341377924169739/848752067106570240/Sample.png)

@@ -30,7 +30,7 @@ public class EnrollmentController implements Initializable {
 
     private final String prefix = "PREFIX enrollment: <http://kefilino.me/ns/enrollment#>\n"
         + "PREFIX mahasiswa: <http://kefilino.me/ns/mahasiswa#>\n"
-        + "PREFIX matakuliah: <http://kefilino.me/ns/mahasiswa#>";
+        + "PREFIX matakuliah: <http://kefilino.me/ns/matakuliah#>";
 
     @FXML
     private TextField idField;
@@ -77,7 +77,6 @@ public class EnrollmentController implements Initializable {
                 + "matakuliah:kdmatkul \"" + kdmatkulField.getText() + "\" ; "
                 + "enrollment:tahun " + tahunField.getText() + " . } ");
         UpdateRequest request = UpdateFactory.create();
-        System.out.println(query);
 
         request.add(query);
         connection.update(request);
@@ -95,7 +94,6 @@ public class EnrollmentController implements Initializable {
                 + "matakuliah:kdmatkul \"" + kdmatkulField.getText() + "\" ; "
                 + "enrollment:tahun " + tahunField.getText() + " . } ");
         UpdateRequest request = UpdateFactory.create();
-        System.out.println(query);
 
         request.add(query);
         connection.update(request);

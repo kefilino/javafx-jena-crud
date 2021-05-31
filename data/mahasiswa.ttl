@@ -1,0 +1,99 @@
+<http://kefilino.me/ns/mahasiswa#140810180028>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "kefilino@email.com" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Kefilino Khalifa Filardi" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "08212321323" .
+
+<http://kefilino.me/ns/mahasiswa#140810180046>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "kevindyandradiva@email.com" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Kevin Dyandradiva" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "08212321321" .
+
+<http://kefilino.me/ns/mahasiswa#140810180001>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Sheila Azhar Almufarida" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
+
+<http://kefilino.me/ns/mahasiswa#140810180002>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Sitti Ufairoh Azzahra" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
+
+<http://kefilino.me/ns/mahasiswa#140810180003>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Irfan Satrio Nugroho" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
+
+<http://kefilino.me/ns/mahasiswa#140810180004>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Natasya Rizky Maharani" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
+
+<http://kefilino.me/ns/mahasiswa#140810180005>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Fauzan Akmal Hariz" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
+
+<http://kefilino.me/ns/mahasiswa#140810180006>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Anugerah Prima Bagaskara" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
+
+<http://kefilino.me/ns/mahasiswa#140810180007>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Putri Nabila" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
+
+<http://kefilino.me/ns/mahasiswa#140810180008>
+        <http://kefilino.me/ns/mahasiswa#angkatan>
+                2018 ;
+        <http://kefilino.me/ns/mahasiswa#email>
+                "-" ;
+        <http://kefilino.me/ns/mahasiswa#nama>
+                "Prayudha Adhitia Libramawan" ;
+        <http://kefilino.me/ns/mahasiswa#telp>
+                "-" .
